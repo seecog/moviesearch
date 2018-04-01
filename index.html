@@ -1,8 +1,28 @@
 <html>
 <head>
 <link rel="stylesheet" href="./assets/css/style.css"/>
+<script src="./assets/js/node_modules/angular/angular.min.js"></script>
+<script src="./assets/js/node_modules/angular-route/angular-route.min.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/controllers/home.controller.js"></script>
+<script src="./assets/js/route.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
+<div class="jumbotron">
+<h1>Movie Search engine</h1>
 
+<input class="form-control"><br> 
+<div class="pull-right">
+<button class="btn btn-primary">Search</button>
+</div>
+</div>
+<div class="container">
+<a href="#!">Home</a>
+<a href="#!/contact">Contact</a>
+<ng-view></ng-view>
+
+
+
+</div>
 </body>
 </html>
