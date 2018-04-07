@@ -5,20 +5,25 @@
 <script src="./assets/js/node_modules/angular-route/angular-route.min.js"></script>
 <script src="./assets/js/app.js"></script>
 <script src="./assets/js/controllers/home.controller.js"></script>
+<script src="./assets/js/controllers/info.controller.js"></script>
 <script src="./assets/js/route.js"></script>
+<link rel="stylesheet" href="./assets/css/menu.css"/>
 </head>
 <body ng-app="myApp">
-<div class="jumbotron">
-<h1>Movie Search engine</h1>
 
-<input class="form-control"><br> 
-<div class="pull-right">
-<button class="btn btn-primary">Search</button>
-</div>
-</div>
-<div class="container">
-<a href="#!">Home</a>
-<a href="#!/contact">Contact</a>
+
+
+<nav>
+		
+
+		<ul>
+			<li><a href="#!" class="active">Home</a></li>
+			<li><a href="#!/contact">Contact</a></li>
+		</ul>
+	</nav>
+	
+<hr>
+<div class="container" style="margin-top:2px;">
 <ng-view></ng-view>
 
 

@@ -6,5 +6,9 @@ angular.module("myApp").config(function($routeProvider){
 		controller : 'HomeController'
 		
 	})
+	.when('/info/:id',{
+		templateUrl : './info.html',
+		controller : 'InfoController'
+	})
 	
 });

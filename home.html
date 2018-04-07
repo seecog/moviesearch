@@ -1,3 +1,12 @@
+<div class="jumbotron">
+<h5>Movie Search engine</h5>
+
+<input class="form-control"><br> 
+<div class="pull-right">
+<button class="btn btn-primary">Search</button>
+</div>
+</div>
+
 <div class="row">
 <div class="col-lg-4" ng-repeat="x in popular_movies">
 <!--start-->
@@ -6,7 +15,12 @@
     <div class="panel-body">
 	<img src="https://image.tmdb.org/t/p/w500/{{x.poster_path}}" width=200 height=200>
 	</div>
-    <div class="panel-footer">Panel Footer</div>
+    <div class="panel-footer">
+	<br>
+	<a class="btn btn-primary" href="#!info/{{x.id}}">
+	View Details
+	</a>
+	</div>
   </div>
 <!--end -->
 </div>
