@@ -1,16 +1,20 @@
 <div class="jumbotron">
 <h5>Movie Search engine</h5>
 
-<input class="form-control"><br> 
+<input class="form-control"/>
 <div class="pull-right">
 <button class="btn btn-primary">Search</button>
 </div>
 </div>
 
 <div class="row">
-<div class="col-lg-4" ng-repeat="x in popular_movies">
+	
 <!--start-->
-<div class="panel panel-default">
+<div class="col-lg-4" ng-repeat="x in popular_movies">
+
+<movie info="x" ></movie>
+<!-- <movieInfo info="x" movieMeth = movieInfo()></movieInfo> -->
+<!-- <div class="panel panel-default">
     <div class="panel-heading">{{x.title}}</div>
     <div class="panel-body">
 	<img src="https://image.tmdb.org/t/p/w500/{{x.poster_path}}" width=200 height=200>
@@ -22,6 +26,8 @@
 	</a>
 	</div>
   </div>
+-->
 <!--end -->
 </div>
 </div>
+
